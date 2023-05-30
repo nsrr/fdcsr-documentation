@@ -1,14 +1,20 @@
 ## About
 
+Forced desynchrony (FD) studies are designed to force desynchrony between circadian rhythms and sleep/wake (and associated behaviors). Under such conditions, the relative impact of circadian rhythms, duration of time awake or asleep, and their (non-linear) interactions on multiple physiological variables can be quantified. Variables include objective performance, subjective mood and alertness, EEG, ECG, sleep, and hormones.
 
 ## Methods
 
+*Brief bits on PSG equipment, collection, scoring*
 
 ## Data overview
 
+The original [polysomnography (PSG)](:files_path:/original/Polysomnography) and [actigraphy](:files_path:/original/Actigraphy) files have been posted.
+
+*Brief bits of information on data types, column meanings, etc.*
 
 ## Access and usage restrictions
 
+The FD-CSR dataset is only available for non-commercial use.
 
 ## Citation and acknowledgement
 
@@ -22,5 +28,10 @@ Users must include the following text in any Acknowledgements:
 
 ## Changelog
 
+*May 2023*
+
+- Start preparing FD-CSR dataset for posting
 
 ## References
+
+- NSRR FD-CSR GitHub Documentation: https://github.com/nsrr/fdcsr-documentation
