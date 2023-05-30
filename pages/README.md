@@ -10,7 +10,7 @@
 ## Access and usage restrictions
 
 
-## Citations and acknowledgements
+## Citation and acknowledgement
 
 When using this dataset, users must cite the following:
 
