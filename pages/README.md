@@ -1,6 +1,6 @@
 ## About
 
-Forced desynchrony (FD) studies are designed to force desynchrony between circadian rhythms and sleep/wake (and associated behaviors) in healthy adults. Under such conditions, the relative impact of circadian rhythms, duration of time awake or asleep, and their (non-linear) interactions on multiple physiological variables can be quantified. Primary outcomes are objective performance (PVT, DSST), subjective alertness and mood (VAS, KSS), melatonin and Core Body Temperature. Secondary metrics include hormone variables, as well as PSG signal data (EEG, EOG, EMG, ECG) and metrics (scored sleep, KDTs, SEMs)
+Forced desynchrony (FD) studies are designed to force desynchrony between circadian rhythms and sleep/wake (and associated behaviors) in healthy adults. Under such conditions, the relative impact of circadian rhythms, duration of time awake or asleep, and their (non-linear) interactions on multiple physiological variables can be quantified. Primary outcomes are objective performance ([Psychomotor Vigilance Test](https://link.springer.com/article/10.3758/bf03200977), [Digit Symbol Substitution Test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6291255/)), subjective alertness and mood ([Visual Analog Scale](https://pubmed.ncbi.nlm.nih.gov/4048757/), [Karolinska Sleepiness Scale](https://pubmed.ncbi.nlm.nih.gov/16679057/)), melatonin and Core Body Temperature. Secondary metrics include hormone variables, Polysomnography (PSG) signal data; electroencephalogram (EEG), electrooculography (EOG), electromyography (EMG), electrocardiogram (ECG or EKG), as well as PSG metrics; scored sleep stages, slow eye movements and King-Devick/Karolinska Drowsiness (?) Test (KDT) scores.
 
 Each study consists of a single 20-75 day inpatient visit where data is collected on multiple physiological metrics across different combinations of circadian time (i.e., phase) and length of time awake or asleep. 
 
@@ -16,6 +16,8 @@ Validated instruments used include:
 * Digit Symbol Substitution Task
 * Visual Analog Scale
 
+Date and time of recordings are presented using **labtime**, which s a value between 0 and 8760, representing the number of hours since midnight on January 1st of the study year. 
+
 ## Data overview
 
 ### Polysomnography
@@ -27,9 +29,9 @@ Raw actigraphy data is available for 36 subjects (all except *2173DX*) and cover
 ### Covariate/phenotype datasets
 Covariate CSV files contain data on 37 subjects. The [subject](:variables_path:/subject) column is the unique FD-CSR identifier. The [study](:variables_path:/study) variable identifies the full name of the particular study a participant was involved in, and [study2](:variables_path:/study2) provides the study nickname.
 
-The dataset columns are described in the accompanying data dictionary files. The **variables** data dictionary file includes column names (id), labels (display names), descriptions, and other metadata. Categorical variables also include an associated “domain” (e.g., 1=Female, 0=Male), which are described in the **domains** data dictionary file.
+The dataset columns are described in the accompanying data dictionary files. The **variables** data dictionary file includes column names (id), labels (display names), descriptions, and other metadata. Categorical variables also include an associated “domain” (e.g., F=Female, M=Male), which are described in the **domains** data dictionary file.
 
-The history of the covariate dataset and data dictionary files have been tracked on GitHub (https://github.com/nsrr/apples-data-dictionary). 
+The history of the covariate dataset and data dictionary files have been tracked on GitHub (https://github.com/nsrr/fdcsr-data-dictionary). 
 
 ## Access and usage restrictions
 
