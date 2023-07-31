@@ -16,15 +16,38 @@ Validated instruments used include:
 * Digit Symbol Substitution Task
 * Visual Analog Scale
 
-Date and time of recordings are presented using **labtime**, which is a value between 0 and 8760, representing the number of hours since midnight on January 1st of the study year. 
+Date and time of recordings are presented using **labtime**, which is a value between 0 and 8760, representing the number of hours since midnight on January 1st of the study year. Labtime is not affected by daylight savings time. 
 
 ## Data overview
 
 ### Polysomnography
-EDF signal data (including EEG) are available for 37 subjects, with files named by the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). Raw data was captured using Vitaport recorders. Scored Sleep files are available for 28 subjects, with scoring completed by hand according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects), .
+EDF signal data (including EEG) are available for 37 subjects, with files named by the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). Raw data were captured using Vitaport recorders. Scored Sleep files are available for 28 subjects, with scoring completed by hand according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects). EDF files can be linked to the Scored Sleep files by sleep/wake period number, negative values indicate wake periods whilst positive values indicate sleep periods, each wake period proceeds the seep period with the same index.
+
+
+<details>
+  <summary>See sleep staging codes:</summary>
+
+  <table>
+<tr><td><b>Value</b></td><td><b>Meaning</b></td></tr>
+<tr><td>0</td><td>Unknown</td></tr>
+<tr><td>1</td><td>NREM 1</td></tr>
+<tr><td>2</td><td>NREM 2</td></tr>
+<tr><td>3</td><td>NREM 3</td></tr>
+<tr><td>4</td><td>NREM 4</td></tr>
+<tr><td>5</td><td>Wake</td></tr>
+<tr><td>6</td><td>REM</td></tr>
+<tr><td>7</td><td>Movement</td></tr>
+<tr><td>8</td><td>Lights Out</td></tr>
+<tr><td>9</td><td>Lights On</td></tr>
+
+
+</table>
+
+</details>    
+
 
 ### Actigraphy
-Raw actigraphy data is available for 36 subjects (all except *2173DX*) and covers a period of up to 90 days. Each participant's actigraphy csv file has an activity level and light level score per 1-minute epoch.
+Raw actigraphy data is available for 36 subjects (all except *2173DX*) and covers a period of up to 90 days. Each participant's actigraphy CSV file has an activity level and light level score per 1-minute epoch.
 
 ### Covariate/phenotype datasets
 Covariate CSV files contain data on 37 subjects. The [subject](:variables_path:/subject) column is the unique FD-CSR identifier. The [study](:variables_path:/study) variable identifies the full name of the particular study a participant was involved in, and [study2](:variables_path:/study2) provides the study nickname.
