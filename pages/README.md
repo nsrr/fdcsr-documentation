@@ -21,7 +21,7 @@ Date and time of recordings are presented using **labtime**, which is a value be
 ## Data overview
 
 ### Polysomnography
-EDF signal data (including EEG) are available for 28 subjects, with files named by the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). Raw data were captured using Vitaport recorders. Scored Sleep files are available for 28 subjects, with scoring completed by hand according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects). EDF files can be linked to the Scored Sleep files by sleep/wake period number, negative values indicate wake periods whilst positive values indicate sleep periods, each wake period proceeds the sleep period with the same index.
+EDF signal data (including EEG) are available for 28 subjects, with files named by the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). Raw data were captured using Vitaport recorders. Scored Sleep files are available for all subjects, with scoring completed by hand according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects). EDF files can be linked to the Scored Sleep files by sleep/wake period number, negative values indicate wake periods whilst positive values indicate sleep periods, each wake period proceeds the sleep period with the same index.
 
 
 <details>
@@ -47,10 +47,10 @@ EDF signal data (including EEG) are available for 28 subjects, with files named 
 
 
 ### Actigraphy
-Raw actigraphy data is available for 28 recordings and each covers a period of up to 90 days. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
+Raw actigraphy data is available for each of the 28 recordings and each covers a period of up to 90 days. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
 
 ### Covariate/phenotype datasets
-Covariate CSV files contain data on 28 subjects. The [subject](:variables_path:/subject) column is the unique FD-CSR identifier. The [study](:variables_path:/study) variable identifies the full name of the particular study a participant was involved in, and [study2](:variables_path:/study2) provides the study nickname.
+Covariate CSV files contain data on all 28 subjects. The [subject](:variables_path:/subject) column is the unique FD-CSR identifier. The [study](:variables_path:/study) variable identifies the full name of the particular study a participant was involved in, and [study2](:variables_path:/study2) provides the study nickname.
 
 The dataset columns are described in the accompanying data dictionary files. The **variables** data dictionary file includes column names (id), labels (display names), descriptions, and other metadata. Categorical variables also include an associated “domain” (e.g., F=Female, M=Male), which are described in the **domains** data dictionary file.
 
