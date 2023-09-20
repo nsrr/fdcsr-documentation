@@ -23,7 +23,7 @@ Date and time of recordings are presented using **labtime**, which is a value be
 ### Polysomnography
 EDF signal data (including EEG) are available for 28 subjects, with files named by the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). Raw data were captured using Vitaport recorders. Scored Sleep files are available for all subjects, with scoring completed by hand according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects). EDF files can be linked to the Scored Sleep files by sleep/wake period number; negative values indicate wake periods whilst positive values indicate sleep periods. Each wake period precedes the sleep period with the same index.
 
-The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake period number; 3) labtime; and 4) sleep staging code. These files describe the **scheduled sleep and wake periods**. The actual start and end labtime for each EDF file can be found in the [:files_path](EDF labtimes CSV file).
+The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake period number; 3) labtime; and 4) sleep staging code. These files describe the **scheduled sleep and wake periods**. The actual start and end labtime for each EDF file can be found in the [:files_path:/original](EDF labtimes CSV file).
 
 <details>
   <summary>View sleep staging codes:</summary>
