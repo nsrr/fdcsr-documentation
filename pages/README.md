@@ -2,7 +2,7 @@
 
 Forced desynchrony (FD) studies are designed to force desynchrony between circadian rhythms and sleep/wake (and associated behaviors) in healthy adults. Under such conditions, the relative impact of circadian rhythms, duration of time awake or asleep, and their (non-linear) interactions on multiple physiological variables can be quantified. Outcomes include objective performance ([Psychomotor Vigilance Test](https://link.springer.com/article/10.3758/bf03200977), [Digit Symbol Substitution Test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6291255/)), subjective alertness and mood ([Visual Analog Scale](https://pubmed.ncbi.nlm.nih.gov/4048757/), [Karolinska Sleepiness Scale](https://pubmed.ncbi.nlm.nih.gov/16679057/)), melatonin and Core Body Temperature, hormone variables, Polysomnography (PSG) signal data; electroencephalogram (EEG), electrooculography (EOG), electromyography (EMG), electrocardiogram (ECG or EKG), as well as PSG metrics; scored sleep stages, slow eye movements and [Karolinska Drowsiness Test](https://pubmed.ncbi.nlm.nih.gov/2265922/) (KDT) values.
 
-Each study consists of a single 20-75 day inpatient visit where data are collected on multiple physiological metrics across different combinations of circadian time (i.e., phase) and length of time awake or asleep. 
+Each study consists of a single 20-75 day inpatient visit where data are collected on multiple physiological metrics across different combinations of circadian time (i.e., phase) and length of time awake or asleep. The studies shared on the NSRR took place between 2000 and 2016.
 
 Exclusion criteria include color blindness, medication use, unstable medical conditions and personal or first degree relative with a psychiatric disorder.
 
@@ -21,9 +21,9 @@ Date and time of recordings are presented using **labtime**, which is a value be
 ## Data overview
 
 ### Polysomnography
-EDF signal data (including EEG) are available for 28 subjects, with files named by the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). Raw data were captured using Vitaport recorders. Scored Sleep files are available for all subjects, with scoring completed by hand according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects). EDF files can be linked to the Scored Sleep files by sleep/wake period number; negative values indicate wake periods whilst positive values indicate sleep periods. Each wake period precedes the sleep period with the same index.
+[EDF signal data](:files_path:/original) (including EEG) are available for 28 subjects, with files named by the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). Raw data were captured using Vitaport recorders. Scored Sleep files are available for all subjects, with scoring completed by hand according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects). EDF files can be linked to the Scored Sleep files by sleep/wake period number; negative values indicate wake periods whilst positive values indicate sleep periods. Each wake period precedes the sleep period with the same index.
 
-The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake period number; 3) labtime; and 4) sleep staging code. These files describe the **scheduled sleep and wake periods**. The actual start and end labtime for each EDF file can be found in the [EDF labtimes CSV file](:files_path:/original).
+The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake period number; 3) labtime; and 4) sleep staging code. These files describe the **scheduled sleep and wake periods**. The actual start and end labtime for each EDF file can be found in the [EDF starttimes CSV file](:files_path:/original).
 
 <details>
   <summary>View sleep staging codes:</summary>
@@ -48,10 +48,10 @@ The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake pe
 
 
 ### Actigraphy
-Raw actigraphy data is available for each of the 28 recordings and each covers a period of up to 90 days. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
+[Raw actigraphy data](:files_path:/original) are available for each of the 28 recordings and each covers a period of up to 90 days. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
 
 ### Covariate/phenotype datasets
-Covariate CSV files contain data on all 28 subjects. The [subject](:variables_path:/subject) column is the unique FD-CSR identifier. The [study](:variables_path:/study) variable identifies the full name of the particular study a participant was involved in, and [study2](:variables_path:/study2) provides the study nickname.
+[Covariate CSV files](:files_path:/datasets) contain data on all 28 subjects. The [subject](:variables_path:/subject) column is the unique FD-CSR identifier. The [study](:variables_path:/study) variable identifies the full name of the particular study a participant was involved in, and [study2](:variables_path:/study2) provides the study nickname.
 
 The dataset columns are described in the accompanying data dictionary files. The **variables** data dictionary file includes column names (id), labels (display names), descriptions, and other metadata. Categorical variables also include an associated “domain” (e.g., F=Female, M=Male), which are described in the **domains** data dictionary file.
 
