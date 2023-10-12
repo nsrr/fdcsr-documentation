@@ -6,6 +6,8 @@ Each study consists of a single 20-75 day inpatient visit where data are collect
 
 Exclusion criteria include color blindness, medication use, unstable medical conditions and personal or first degree relative with a psychiatric disorder.
 
+**Note: All data access requests must be pre-approved by PI Dr Klerman (ebklerman@mgh.harvard.edu) prior to submitting a data request with sleepdata.org.**
+
 ## Methods
 
 Data were collected using a single-blinded parallel group randomized control trial (RCT). 
@@ -59,7 +61,7 @@ The history of the covariate dataset and data dictionary files have been tracked
 
 ## Access and usage restrictions
 
-All data access requests must be pre-approved by PI Dr Klerman (ebklerman@mgh.harvard.edu) prior to submitting a data request with sleepdata.org. The FD-CSR dataset is only available for non-commercial use.
+The FD-CSR dataset is only available for non-commercial use.
 
 ## Citation and acknowledgement
 
