@@ -6,7 +6,7 @@ Each study consists of a single 11-38 day inpatient visit per participant where 
 
 Exclusion criteria include color blindness, medication use, unstable medical conditions and personal or first degree relative with a psychiatric disorder.
 
-**Note: All data access requests must be pre-approved by PI Dr Klerman prior to submitting a data request with sleepdata.org. Please [complete the pre-approval survey to get started](https://redcap.link/fdcsr-pre-approval).**
+**Note: All data access requests must be pre-approved by PI Dr Klerman prior to submitting a data request with sleepdata.org. Please <a href="https://redcap.link/fdcsr-pre-approval" target="_blank">complete the pre-approval survey to get started</a>.**
 
 ## Methods
 
@@ -85,7 +85,7 @@ Users must include the following text in any Acknowledgements:
 
 *November 2023*
 
-- Add link to [pre-approval survey](https://redcap.link/fdcsr-pre-approval) for users wishing to access FD-CSR data
+- Add link to  <a href="https://redcap.link/fdcsr-pre-approval" target="_blank">pre-approval survey</a> for users wishing to access FD-CSR data
 
 *October 2023*
 
