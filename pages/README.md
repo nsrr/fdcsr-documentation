@@ -30,14 +30,14 @@ The FD-CSR Sleep Period times file contains 5 columns: 1) Subject; 2) SP number 
 
 ### Polysomnography
 
-*EDF*
+*EDF* <br>
 [EDF signal data](:files_path:/original) (including EEG) are available for 28 subjects. The file name includes the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). See note above about analyzing data by labtime rather than file name.
 
 Raw data were captured using Vitaport recorders. 
 
 A list of EDF files is in the XX file that contains 6 columns: 1) File name, 2) clock time (HH:mm:ss) of the first line, 3)  labtime of the first line, 4) number of lines in the file, 5) clock time of the last line, 6) labtime of the last line. Note: if the csv file shows clock time as a number between 0 and 1; then multiply by 24 to get the decimal time (e.g., 12.75) or have Excel reformat the cell. These data should be used to calculate labtime for each epoch of the EDF file.  EDF file data should then be linked to the Scored Sleep files (detailed below) by labtime.
 
-*Scored Sleep*
+*Scored Sleep* <br>
 Scoring was done manually according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects).
 
 The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake period number; 3) labtime; and 4) sleep staging code. Negative values in the sleep/wake period number column indicate wake periods whilst positive values indicate sleep periods. Each wake period precedes the sleep period with the same number.
