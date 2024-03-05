@@ -31,7 +31,7 @@ The FD-CSR Sleep Period times file contains 5 columns: 1) Subject; 2) SP number 
 ### Polysomnography
 
 *_EDF_* <br>
-[EDF signal data](:files_path:/original) (including EEG) are available for 28 subjects. The file name includes the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). See note above about analyzing data by labtime rather than file name.
+[EDF signal data](:files_path:/subjects) (including EEG) are available for 28 subjects. The file name includes the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). See note above about analyzing data by labtime rather than file name.
 
 Raw data were captured using Vitaport recorders. 
 
@@ -65,7 +65,7 @@ The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake pe
 
 
 ### Actigraphy
-[Raw actigraphy data](:files_path:/original) are available. For each subject, data are available for 1-2 weeks prior to the inpatient study through the immediately following inpatient study. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
+[Raw actigraphy data](:files_path:/subjects) are available. For each subject, data are available for 1-2 weeks prior to the inpatient study through the immediately following inpatient study. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
 
 ### Objective Performance and Subjective Alertness
 Validated instruments used include:
