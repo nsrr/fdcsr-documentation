@@ -26,7 +26,7 @@ For the current NSRR FD-CSR dataset, PSG, scored sleep, actigraphy, sleep schedu
 
 ### Schedule
 
-The FD-CSR Sleep Period times file contains 5 columns: 1) Subject; 2) SP number (includes text SP), 3) SP start time (labtime), 4) SP end (labtime), 5) Protocol section (BL, FD, REC) where Protocol section (BL, FD, REC) where BL=Baseline, FD=Forced Desynchrony, REC=Recovery.
+The FD-CSR Sleep Period protocol file ([**fdcsr_sleep_period_protocol.csv**](:files_path:/subjects)) contains 5 columns: 1) Subject; 2) SP number (includes text SP), 3) SP start time (labtime), 4) SP end (labtime), 5) Protocol section (BL, FD, REC) where Protocol section (BL, FD, REC) where BL=Baseline, FD=Forced Desynchrony, REC=Recovery.
 
 ### Polysomnography
 
