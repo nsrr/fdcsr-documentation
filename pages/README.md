@@ -35,7 +35,7 @@ The FD-CSR Sleep Period protocol file ([**fdcsr_sleep_period_protocol.csv**](:fi
 
 Raw data were captured using Vitaport recorders. 
 
-A list of EDF file [**fdcsr_edf_start_times.csv**](:files_path:/subjects) contains 6 columns: 1) File name, 2) clock time (HH:mm:ss) of the first line, 3)  labtime of the first line, 4) number of lines in the file, 5) clock time of the last line, 6) labtime of the last line. These data should be used to calculate labtime for each epoch of the EDF file.  EDF file data should then be linked to the Scored Sleep files (detailed below) by labtime.
+A list of EDF files ([**fdcsr_edf_start_times.csv**](:files_path:/subjects)) contains 6 columns: 1) File name, 2) clock time (HH:mm:ss) of the first line, 3)  labtime of the first line, 4) number of lines in the file, 5) clock time of the last line, 6) labtime of the last line. These data should be used to calculate labtime for each epoch of the EDF file.  EDF file data should then be linked to the Scored Sleep files (detailed below) by labtime.
 
 *_Scored Sleep_* <br>
 Scoring was done manually according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects).
