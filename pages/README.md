@@ -26,16 +26,16 @@ For the current NSRR FD-CSR dataset, PSG, scored sleep, actigraphy, sleep schedu
 
 ### Schedule
 
-The FD-CSR Sleep Period protocol file ([**fdcsr_sleep_period_protocol.csv**](:files_path:/subjects)) contains 5 columns: 1) Subject; 2) SP number (includes text SP), 3) SP start time (labtime), 4) SP end (labtime), 5) Protocol section (BL, FD, REC) where Protocol section (BL, FD, REC) where BL=Baseline, FD=Forced Desynchrony, REC=Recovery.
+The FD-CSR Sleep Period protocol file ([**fdcsr_sleep_period_protocol.csv**](:files_path:/)) contains 5 columns: 1) Subject; 2) SP number (includes text SP), 3) SP start time (labtime), 4) SP end (labtime), 5) Protocol section (BL, FD, REC) where Protocol section (BL, FD, REC) where BL=Baseline, FD=Forced Desynchrony, REC=Recovery.
 
 ### Polysomnography
 
 *_EDF_* <br>
-[EDF signal data](:files_path:/subjects) (including EEG) are available for 28 subjects. The file name includes the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). See note above about analyzing data by labtime rather than file name.
+[EDF signal data](:files_path:/edf) (including EEG) are available for 28 subjects. The file name includes the sleep/wake period (e.g., sp2 for Scheduled Sleep Period 2). See note above about analyzing data by labtime rather than file name.
 
 Raw data were captured using Vitaport recorders. 
 
-A list of EDF files ([**fdcsr_edf_start_times.csv**](:files_path:/subjects)) contains 6 columns: 1) File name, 2) clock time (HH:mm:ss) of the first line, 3)  labtime of the first line, 4) number of lines in the file, 5) clock time of the last line, 6) labtime of the last line. These data should be used to calculate labtime for each epoch of the EDF file.  EDF file data should then be linked to the Scored Sleep files (detailed below) by labtime.
+A list of EDF files ([**fdcsr_edf_start_times.csv**](:files_path:/)) contains 6 columns: 1) File name, 2) clock time (HH:mm:ss) of the first line, 3)  labtime of the first line, 4) number of lines in the file, 5) clock time of the last line, 6) labtime of the last line. These data should be used to calculate labtime for each epoch of the EDF file.  EDF file data should then be linked to the Scored Sleep files (detailed below) by labtime.
 
 *_Scored Sleep_* <br>
 Scoring was done manually according to the Rechtschaffen and Kales criteria (Rechtschaffen A, Kales A, editors. Los Angeles: Brain Information Service/Brain Research Institute, University of California; 1968. A manual of standardized terminology, techniques and scoring system of sleep stages in human subjects).
@@ -65,7 +65,7 @@ The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake pe
 
 
 ### Actigraphy
-[Raw actigraphy data](:files_path:/subjects) are available. For each subject, data are available for 1-2 weeks prior to the inpatient study through the immediately following inpatient study. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
+[Raw actigraphy data](:files_path:/actigraphy) are available. For each subject, data are available for 1-2 weeks prior to the inpatient study through the immediately following inpatient study. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
 
 ### Objective Performance and Subjective Alertness
 Validated instruments used include:
@@ -107,6 +107,10 @@ Users must include the following text in any Acknowledgements:
 > The National Sleep Research Resource was supported by the U.S. National Institutes of Health, National Heart Lung and Blood Institute (R24 HL114473, 75N92019R002).
 
 ## Changelog
+
+*July 2026*
+
+- Add new data types for GX subjects, rearrange files
 
 *March 2024*
 
