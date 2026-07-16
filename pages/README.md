@@ -67,17 +67,19 @@ The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake pe
 ### Actigraphy
 [Raw actigraphy data](:files_path:/actigraphy) are available. For each subject, data are available for 1-2 weeks prior to the inpatient study through the immediately following inpatient study. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
 
-### Objective Performance and Subjective Alertness
-Validated instruments used include:
+### Objective performance and subjective alertness
 
-- Karolinska Sleepiness Scale
-- Psychomotor Vigilance Task
-- Digit Symbol Substitution Task
-- Visual Analog Scale
+Validated instruments include:
 
-Note: These will be made available on NSRR later.
+- [Karolinska Sleepiness Scale](:files_path:/kss)
+- [Psychomotor Vigilance Task](:files_path:/pvt)
+- [Digit Symbol Substitution Task](:files_path:/dsst)
+- Visual Analog Scale (will be made available later)
+
+Descriptions and definitions of these of these data types [are available here (**Neurobehav Data Description 2026a.xlsx**)](:files_path:/).
 
 ### Covariate/phenotype datasets
+
 [Covariate CSV files](:files_path:/datasets) contain data on all subjects. The [subject](:variables_path:/subject) column is the unique FD-CSR identifier. The [study](:variables_path:/study) variable identifies the full name of the particular study a participant was involved in, and [study2](:variables_path:/study2) provides the study nickname.
 
 The dataset columns are described in the accompanying data dictionary files. The **variables** data dictionary file includes column names (id), labels (display names), descriptions, and other metadata. Categorical variables also include an associated “domain” (e.g., F=Female, M=Male), which are described in the **domains** data dictionary file.
