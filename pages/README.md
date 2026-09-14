@@ -10,19 +10,39 @@ Exclusion criteria include color blindness, medication use, unstable medical con
 
 ## Methods
 
-Data were collected using a single-blinded parallel group randomized control trial (RCT). 
-
 Studies were conducted in an inpatient unit at [Brigham and Women's Hospital](https://www.brighamandwomens.org/). 
 
-All studies include Baseline (BL), Forced Desynchrony (FD) and Recovery (REC) segments.
+All studies include Baseline (BL), Forced Desynchrony (FD), and Recovery (REC) segments.
+
+## Studies
+
+There are five groups of studies included in this FD-CSR dataset: Original publications with details are listed under Citation and Acknowlegements.
+
+### GX studies (T20CSR_CSR, T20CSR_Control, AFOSR9)
+
+GX studies include chronic sleep restriction (CSR) with a 1:3.3 sleep:wake ratio and Control with 1:2 sleep:wake ratio. There are two sub studies.
+
+  - T=42.85hr with CSR ratio only (N=9)
+     - T=42.85 hr with habitual ratio are the XX study Placebo (details below) (N=8)
+  - T=20.00 hr with randomization to CSR (N=9) or Control (N=10) ratio
+
+### DX studies (Modafinil_Modafinil, Modafinil_Placebo)
+
+DX studies had T=42.85hr and Control ratio with Modafinil (N=9) or Placebo (N=9)
+
+### XX studies (Caffeine_Caffeine, Caffeine_Placebo)
+
+XX studies had T=42.85 hr and Control ratio with Caffeine (N=8) or Placebo (N=8)
+
+### MX studies (Melatonin_L, Melatonin_H, Melatonin_Placebo)
+
+MX studies had T=20.00 hr and Control ratio with Melatonin- Low (N=12), Melatonin-High (N=12), or Placebo (N=12)
 
 ## Data overview
 
 Data are stored using **labtime** instead of calendar date and clock time. Labtime is a value between 0.000 and 8760.000, representing the number of hours (including fractions of hours) since midnight on January 1st of the study year. For example, 345.667 is 345h and 40 minutes since Jan 1 at midnight (0.000). Labtime is not affected by daylight savings time.
 
 Data are time-based, not file name based. Data should be analyzed using labtime rather than by file name.  A file name including SP (Sleep Period) may include data from WP (Wake Period) before and after it; a file with name including WP may include some SP data.
-
-For the current NSRR FD-CSR dataset, PSG, scored sleep, actigraphy, sleep schedule, circadian phase timing, and covariate information are available for 28 subjects. Other data types will be added later.
 
 ### Schedule
 
@@ -47,14 +67,14 @@ The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake pe
 
   <table>
 <tr><td><b>Value</b></td><td><b>Meaning</b></td></tr>
-<tr><td>0</td><td>Unknown</td></tr>
-<tr><td>1</td><td>NREM 1</td></tr>
-<tr><td>2</td><td>NREM 2</td></tr>
-<tr><td>3</td><td>NREM 3</td></tr>
-<tr><td>4</td><td>NREM 4</td></tr>
+<tr><td>0</td><td>Unscorable</td></tr>
+<tr><td>1</td><td>NREM 1 sleep stage 1</td></tr>
+<tr><td>2</td><td>NREM 2 sleep stage 2</td></tr>
+<tr><td>3</td><td>NREM 3 sleep stage 3</td></tr>
+<tr><td>4</td><td>NREM 4 sleep stage 4</td></tr>
 <tr><td>5</td><td>Wake</td></tr>
-<tr><td>6</td><td>REM</td></tr>
-<tr><td>7</td><td>Movement</td></tr>
+<tr><td>6</td><td>REM sleep</td></tr>
+<tr><td>7</td><td>Movement time</td></tr>
 <tr><td>8</td><td>Lights Out</td></tr>
 <tr><td>9</td><td>Lights On</td></tr>
 
@@ -67,14 +87,17 @@ The Scored Sleep CSV files contain four columns: 1) Subject ID; 2) sleep/wake pe
 ### Actigraphy
 [Raw actigraphy data](:files_path:/actigraphy) are available. For each subject, data are available for 1-2 weeks prior to the inpatient study through the immediately following inpatient study. All actigraphy CSV files have an activity level and light level score per 1-minute epoch.
 
-### Objective performance and subjective alertness
+### Objective performance, subjective alertness and mood, and other questionnaires
 
 Validated instruments include:
 
-- [Karolinska Sleepiness Scale](:files_path:/kss)
 - [Psychomotor Vigilance Task](:files_path:/pvt)
 - [Digit Symbol Substitution Task](:files_path:/dsst)
+- Perform (Addition) Test (will be made available later)
+- [Karolinska Sleepiness Scale](:files_path:/kss)
 - Visual Analog Scale (will be made available later)
+- Post-sleep Questionnaires (will be made available later)
+- Performance Evaluation and Effort Scale (will be made available later)
 
 Descriptions and definitions of these of these data types [are available here (**Neurobehav Data Description 2026a.xlsx**)](:files_path:/).
 
@@ -96,13 +119,25 @@ When using this dataset, users must cite the following:
 
 >[Zhang GQ, Cui L, Mueller R, Tao S, Kim M, Rueschman M, Mariani S, Mobley D, Redline S. The National Sleep Research Resource: towards a sleep data commons. J Am Med Inform Assoc. 2018 Oct 1;25(10):1351-1358. doi: 10.1093/jamia/ocy064. PMID: 29860441; PMCID: PMC6188513.](https://pubmed.ncbi.nlm.nih.gov/29860441/)
 
->[Grady S, Aeschbach D, Wright KP Jr, Czeisler CA. Effect of modafinil on impairments in neurobehavioral performance and learning associated with extended wakefulness and circadian misalignment. Neuropsychopharmacology. 2010 Aug;35(9):1910-20. doi: 10.1038/npp.2010.63. Epub 2010 May 26. PMID: 20505660; PMCID: PMC2904872.](https://pubmed.ncbi.nlm.nih.gov/20505660/)
+For work using GX files: 
 
->[Cohen DA, Wang W, Wyatt JK, Kronauer RE, Dijk DJ, Czeisler CA, Klerman EB. Uncovering residual effects of chronic sleep loss on human performance. Sci Transl Med. 2010 Jan 13;2(14):14ra3. doi: 10.1126/scitranslmed.3000458. PMID: 20371466; PMCID: PMC2892834.](https://pubmed.ncbi.nlm.nih.gov/20371466/)
- 
->[McHill AW, Hull JT, Wang W, Czeisler CA, Klerman EB. Chronic sleep curtailment, even without extended (>16-h) wakefulness, degrades human vigilance performance. Proc Natl Acad Sci U S A. 2018 Jun 5;115(23):6070-6075. doi: 10.1073/pnas.1706694115. Epub 2018 May 21. PMID: 29784810; PMCID: PMC6003377.](https://pubmed.ncbi.nlm.nih.gov/29784810/)
+> [Cohen DA, Wang W, Wyatt JK, Kronauer RE, Dijk DJ, Czeisler CA, Klerman EB. Uncovering residual effects of chronic sleep loss on human performance. Sci Transl Med. 2010 Jan 13;2(14):14ra3. doi: 10.1126/scitranslmed.3000458. PMID: 20371466; PMCID: PMC2892834.](https://pmc.ncbi.nlm.nih.gov/articles/PMC2892834/)
+> 
+> [McHill AW, Hull JT, Wang W, Czeisler CA, Klerman EB. Chronic sleep curtailment, even without extended (>16-h) wakefulness, degrades human vigilance performance. Proc Natl Acad Sci U S A. 2018 Jun 5;115(23):6070-6075. doi: 10.1073/pnas.1706694115. Epub 2018 May 21. PMID: 29784810; PMCID: PMC6003377.](https://pubmed.ncbi.nlm.nih.gov/29784810/)
+> 
+> [McHill AW, Hull JT, Cohen DA, Wang W, Czeisler CA, Klerman EB. Chronic sleep restriction greatly magnifies performance decrements immediately after awakening. Sleep. 2019 May 1;42(5):zsz032. doi: 10.1093/sleep/zsz032. PMID: 30722039; PMCID: PMC6519907.](https://pubmed.ncbi.nlm.nih.gov/30722039/)
 
->[McHill AW, Hull JT, Cohen DA, Wang W, Czeisler CA, Klerman EB. Chronic sleep restriction greatly magnifies performance decrements immediately after awakening. Sleep. 2019 May 1;42(5):zsz032. doi: 10.1093/sleep/zsz032. PMID: 30722039; PMCID: PMC6519907.](https://pubmed.ncbi.nlm.nih.gov/30722039/)
+For work using GX or XX files: 
+
+> [Wyatt JK, Cajochen C, Ritz-De Cecco A, Czeisler CA, Dijk DJ. Low-dose repeated caffeine administration for circadian-phase-dependent performance degradation during extended wakefulness. Sleep. 2004;27(3):374-381. doi:10.1093/sleep/27.3.374](https://pubmed.ncbi.nlm.nih.gov/15164887/)
+
+For work using DX files: 
+
+> [Grady S, Aeschbach D, Wright KP Jr, Czeisler CA. Effect of modafinil on impairments in neurobehavioral performance and learning associated with extended wakefulness and circadian misalignment. Neuropsychopharmacology. 2010 Aug;35(9):1910-20. doi: 10.1038/npp.2010.63. Epub 2010 May 26. PMID: 20505660; PMCID: PMC2904872.](https://pubmed.ncbi.nlm.nih.gov/20505660/)
+
+For work using MX files: 
+
+> [Wyatt JK, Dijk DJ, Cecco ARD, Ronda JM, Czeisler CA. Sleep-Facilitating Effect of Exogenous Melatonin in Healthy Young Men and Women Is Circadian-Phase Dependent. Sleep. 2006;29(5):609-618. doi:10.1093/sleep/29.5.609](https://pubmed.ncbi.nlm.nih.gov/16774150/)
 
 Users must include the following text in any Acknowledgements:
 
