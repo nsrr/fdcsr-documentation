@@ -145,6 +145,9 @@ Users must include the following text in any Acknowledgements:
 
 ## Changelog
 
+*October 2026*
+- Add [0.2.0 dataset](:files_path:/datasets) version with additional subjects and variables
+
 *July 2026*
 
 - Add new data types for GX subjects, rearrange files
@@ -167,8 +170,4 @@ Users must include the following text in any Acknowledgements:
 ## References
 
 - NSRR FD-CSR GitHub Documentation: https://github.com/nsrr/fdcsr-documentation
-- FD-CSR GitHub Data Dictionary: https://github.com/nsrr/fdcsr-data-dictionary
-
-## Questions?
-
-Please reach out to us at support@sleepdata.org or in the [Forum](https://sleepdata.org/forum) if you have questions.
+- NSRR FD-CSR GitHub Data Dictionary: https://github.com/nsrr/fdcsr-data-dictionary
