@@ -141,7 +141,7 @@ For work using MX files:
 
 Users must include the following text in any Acknowledgements:
 
-> The National Sleep Research Resource was supported by the U.S. National Institutes of Health, National Heart Lung and Blood Institute (R24 HL114473, 75N92019R002).
+> The National Sleep Research Resource was supported by the U.S. National Institutes of Health, National Heart Lung and Blood Institute (R24 HL114473, 75N92019R002, 75N92025R00007).
 
 ## Changelog
 
